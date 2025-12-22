@@ -1,3 +1,5 @@
+import 'package:chatify/ui/screen/login_screen.dart';
+import 'package:chatify/ui/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -5,6 +7,10 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      title: 'Chatify',
+      debugShowCheckedModeBanner: false,
+      home: LoginScreen(),
+    );
   }
 }
