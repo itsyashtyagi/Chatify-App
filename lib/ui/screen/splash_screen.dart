@@ -1,3 +1,4 @@
+import 'package:chatify/config/asset_constant.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -5,6 +6,8 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Splash Screen")));
+    return Scaffold(
+      body: Center(child: SizedBox(child: Image.asset(AssetConstant.applogo))),
+    );
   }
 }
